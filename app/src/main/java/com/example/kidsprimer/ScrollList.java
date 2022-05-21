@@ -3,12 +3,14 @@ package com.example.kidsprimer;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.TextView;
 
-public class ScrollList extends AppCompatActivity {
+public class ScrollList extends AppCompatActivity implements View.OnClickListener {
 
     TextView [] t = new TextView[26];
     int[] ids = {R.id.textView4,R.id.textView5,R.id.textView6,R.id.textView7,R.id.textView8,
@@ -25,13 +27,23 @@ public class ScrollList extends AppCompatActivity {
         head.setTextColor(Color.RED);
         head.setGravity(Gravity.CENTER);
         head.setBackgroundColor(getResources().getColor(R.color.cyan));
-        for (int i = 0; i < ids.length; i++) {
+        for (int i = 0; i < ids.length; i++)
+        {
             t[i] = findViewById(ids[i]);
             t[i].setTextColor(Color.RED);
             t[i].setTextSize(40);
             t[i].setHeight(200);
             t[i].setBackground(getDrawable(R.drawable.textview_border));
             t[i].setGravity(Gravity.CENTER);
+            t[i].setOnClickListener(this);
         }
     }
+
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(ScrollList.this,Alphabet_activity.class);
+        intent.putExtra("letter","txt from 1");
+        startActivity(intent);
+    }
+
 }
