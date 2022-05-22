@@ -14,9 +14,13 @@ public class Alphabet_activity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alphabet);
         tt = findViewById(R.id.textView30);
-        //Intent intent = new Intent(Alphabet_activity.this,ScrollList.class);
-        Intent i = new Intent();
-        tt.setText(i.getStringExtra("key"));
-        //startActivity(intent);
+        Intent i = getIntent();
+        tt.setText(i.getStringExtra("non empty"));
+        if(i.getExtras() != null)
+        {
+            tt.setText(i.getStringExtra("SS"));
+        }
+        else
+            tt.setText(i.getStringExtra("empty"));
     }
 }
