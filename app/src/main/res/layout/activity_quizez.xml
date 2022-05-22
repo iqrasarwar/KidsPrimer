@@ -10,10 +10,6 @@
         android:id="@+id/scrollView3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,30 +18,53 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView37"
                 android:layout_width="match_parent"
                 android:layout_height="85dp"
+                android:background="@color/cyan"
+                android:backgroundTint="@color/cyan"
                 android:gravity="center"
                 android:text="QUIZEZ"
+                android:textColor="@android:color/holo_red_dark"
                 android:textSize="48sp" />
 
             <TextView
-                android:id="@+id/textView38"
+                android:id="@+id/q1"
                 android:layout_width="match_parent"
-                android:layout_height="74dp"
+                android:layout_height="80dp"
                 android:gravity="center"
                 android:text="QUIZ # 01 "
+                android:textColor="@color/cyan"
                 android:textSize="34sp" />
 
             <TextView
-                android:id="@+id/textView39"
+                android:id="@+id/q2"
                 android:layout_width="match_parent"
-                android:layout_height="92dp"
+                android:layout_height="80dp"
                 android:gravity="center"
                 android:text="QUIZ # 02"
+                android:textColor="@color/cyan"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="QUIZ # 03"
+                android:textColor="@color/cyan"
+                android:textSize="34dp" />
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="QUIZ # 04"
+                android:textColor="@color/cyan"
                 android:textSize="34sp" />
         </LinearLayout>
     </ScrollView>
