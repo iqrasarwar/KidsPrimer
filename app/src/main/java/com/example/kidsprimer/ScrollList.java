@@ -42,9 +42,15 @@ public class ScrollList extends AppCompatActivity implements View.OnClickListene
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(this,Alphabet_activity.class);
-        String staticString = "SFNDF";
-        intent.putExtra("SS", staticString);
+        int id = view.getId();
+        String str = "";
+        for (int i = 0; i < ids.length; i++) {
+            if (id == ids[i])
+            {
+                str =  Integer.toString(i);
+            }
+        }
+        intent.putExtra("SS", str);
         startActivity(intent);
     }
-
 }
