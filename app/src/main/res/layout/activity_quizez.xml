@@ -58,14 +58,6 @@
                 android:textColor="@color/cyan"
                 android:textSize="34dp" />
 
-            <TextView
-                android:id="@+id/q4"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:gravity="center"
-                android:text="QUIZ # 04"
-                android:textColor="@color/cyan"
-                android:textSize="34sp" />
         </LinearLayout>
     </ScrollView>
 

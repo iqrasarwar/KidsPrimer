@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsPrimer">
         <activity
-            android:name=".quiz4"
-            android:exported="false" />
-        <activity
             android:name=".quiz3"
             android:exported="false" />
         <activity
