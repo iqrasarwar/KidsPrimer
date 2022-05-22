@@ -31,12 +31,12 @@
                 android:gravity="center"
                 android:text="QUIZ - FILL THE FOLLOWING"
                 android:textColor="@android:color/holo_red_dark"
-                android:textSize="30dp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/textView39"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="20dp"
                 android:text="What comes after H?"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -47,12 +47,12 @@
                 android:layout_height="30dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="24sp" />
+                android:textSize="10sp" />
 
             <TextView
                 android:id="@+id/textView43"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="20dp"
                 android:text="What comes before K?"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -63,12 +63,12 @@
                 android:layout_height="30dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="24sp" />
+                android:textSize="10sp" />
 
             <TextView
                 android:id="@+id/textView42"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="20dp"
                 android:text="What comes Between D and F?"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -79,12 +79,12 @@
                 android:layout_height="30dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="24sp" />
+                android:textSize="10sp" />
 
             <TextView
                 android:id="@+id/textView41"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="20dp"
                 android:text="What comes before U?"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -95,12 +95,12 @@
                 android:layout_height="30dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="24sp" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/textView40"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="20dp"
                 android:text="What comes after P?"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -111,7 +111,7 @@
                 android:layout_height="30dp"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="24sp" />
+                android:textSize="10sp" />
 
             <Button
                 android:id="@+id/button6"

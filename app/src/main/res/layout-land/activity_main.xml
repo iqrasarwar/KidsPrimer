@@ -10,14 +10,12 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="252dp"
-        android:layout_marginBottom="136dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="448dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Learn"
         android:textColor="@color/cyan"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -25,12 +23,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="Ruby Primer For Kids"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="34sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -38,10 +36,10 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="2022-2023"
         android:textColor="@color/cyan"
-        android:textSize="34sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,10 +47,10 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="426dp"
-        android:layout_height="193dp"
+        android:layout_width="430dp"
+        android:layout_height="152dp"
         android:layout_marginStart="152dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/cover" />
@@ -62,32 +60,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="68dp"
-        android:layout_marginBottom="34dp"
+        android:layout_marginBottom="4dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Test"
         android:textColor="@color/cyan"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toEndOf="@+id/button2" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="56dp"
         android:backgroundTint="@android:color/holo_red_dark"
         android:text="Repositry"
         android:textColor="@color/cyan"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
