@@ -35,7 +35,8 @@ public class SplachActivity extends AppCompatActivity {
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(SplachActivity.this,Quizez.class);
+                startActivity(intent);
             }
         });
     }

@@ -20,28 +20,28 @@ public class Quizez extends AppCompatActivity {
         q1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Quizez.this,ScrollList.class);
+                Intent intent = new Intent(Quizez.this,quiz1.class);
                 startActivity(intent);
             }
         });
         q2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Quizez.this,ScrollList.class);
+                Intent intent = new Intent(Quizez.this,quiz2.class);
                 startActivity(intent);
             }
         });
         q3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Quizez.this,ScrollList.class);
+                Intent intent = new Intent(Quizez.this,quiz3.class);
                 startActivity(intent);
             }
         });
         q4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Quizez.this,ScrollList.class);
+                Intent intent = new Intent(Quizez.this,quiz4.class);
                 startActivity(intent);
             }
         });

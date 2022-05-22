@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">KidsPrimer</string>
     <string name="app_h1">Ruby Primer For Kids</string>
+    <string name="result_q1"></string>
     <string name="title_activity_scrolling_list">ScrollingListActivity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
