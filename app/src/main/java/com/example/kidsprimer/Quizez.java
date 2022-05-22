@@ -13,16 +13,15 @@ public class Quizez extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizez);
-        q1 = findViewById(R.id.q1);
         q2 = findViewById(R.id.q2);
         q3 = findViewById(R.id.q3);
-        q1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Quizez.this,quiz1.class);
-                startActivity(intent);
-            }
-        });
+//        q1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(Quizez.this,quiz1.class);
+//                startActivity(intent);
+//            }
+//        });
         q2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

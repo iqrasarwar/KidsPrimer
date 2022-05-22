@@ -32,20 +32,11 @@
                 android:textSize="48sp" />
 
             <TextView
-                android:id="@+id/q1"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:gravity="center"
-                android:text="QUIZ # 01 "
-                android:textColor="@color/cyan"
-                android:textSize="34sp" />
-
-            <TextView
                 android:id="@+id/q2"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:gravity="center"
-                android:text="QUIZ # 02"
+                android:text="QUIZ # 01"
                 android:textColor="@color/cyan"
                 android:textSize="34sp" />
 
@@ -54,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:gravity="center"
-                android:text="QUIZ # 03"
+                android:text="QUIZ # 02"
                 android:textColor="@color/cyan"
                 android:textSize="34dp" />
 
