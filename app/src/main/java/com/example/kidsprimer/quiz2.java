@@ -11,6 +11,8 @@ import android.widget.EditText;
 public class quiz2 extends AppCompatActivity {
     Button b;
     EditText t1,t2,t3,t4,t5;
+    String s1,s2,s3,s4,s5;
+    boolean s = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +26,12 @@ public class quiz2 extends AppCompatActivity {
          b.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
-                 String s1 = t1.getText().toString();
-                 String s2 = t2.getText().toString();
-                 String s3 = t3.getText().toString();
-                 String s4 = t4.getText().toString();
-                 String s5 = t5.getText().toString();
+                 s = true;
+                 s1 = t1.getText().toString();
+                 s2 = t2.getText().toString();
+                 s3 = t3.getText().toString();
+                 s4 = t4.getText().toString();
+                 s5 = t5.getText().toString();
                  if(s1.equals("i") || s1.equals("I"))
                      t1.setBackgroundColor(Color.GREEN);
                  else
@@ -52,5 +55,54 @@ public class quiz2 extends AppCompatActivity {
 
              }
          });
+    }
+    @Override
+    protected void onSaveInstanceState(final Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("t1",s1);
+        outState.putString("t2",s2);
+        outState.putString("t3",s3);
+        outState.putString("t4",s4);
+        outState.putString("t5",s5);
+        outState.putBoolean("submit",s);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(final Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String ss1 = savedInstanceState.getString("t1");
+        String ss2 = savedInstanceState.getString("t2");
+        String ss3 = savedInstanceState.getString("t3");
+        String ss4 = savedInstanceState.getString("t4");
+        String ss5 = savedInstanceState.getString("t5");
+        boolean s = savedInstanceState.getBoolean("submit");
+        t1.setText(ss1);
+        t2.setText(ss2);
+        t3.setText(ss3);
+        t4.setText(ss4);
+        t5.setText(ss5);
+        if(s)
+        {
+            if(ss1.equals("i") || ss1.equals("I"))
+                t1.setBackgroundColor(Color.GREEN);
+            else
+                t1.setBackgroundColor(Color.RED);
+            if(ss2.equals("j") || ss2.equals("J"))
+                t2.setBackgroundColor(Color.GREEN);
+            else
+                t2.setBackgroundColor(Color.RED);
+            if(ss3.equals("E") || ss3.equals("e"))
+                t3.setBackgroundColor(Color.GREEN);
+            else
+                t3.setBackgroundColor(Color.RED);
+            if(ss4.equals("T") || ss4.equals("t"))
+                t4.setBackgroundColor(Color.GREEN);
+            else
+                t4.setBackgroundColor(Color.RED);
+            if(ss5.equals("S") || ss5.equals("s"))
+                t5.setBackgroundColor(Color.GREEN);
+            else
+                t5.setBackgroundColor(Color.RED);
+        }
     }
 }

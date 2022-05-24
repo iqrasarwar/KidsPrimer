@@ -12,6 +12,7 @@ public class Alphabet_activity extends AppCompatActivity
 {
     TextView tt;
     ImageView iv;
+    String s;
     char[] letters = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S',
         'T','U','V','W','X','Y','Z'};
     int[] imgs = {R.drawable.l1, R.drawable.l2,R.drawable.l3,R.drawable.l4,R.drawable.l5,
@@ -31,8 +32,8 @@ public class Alphabet_activity extends AppCompatActivity
         if(i.getExtras() != null)
         {
             int index = Integer.parseInt(i.getStringExtra("SS"));
-            String ch =Character.toString(letters[index]);
-            tt.setText(ch);
+            s =Character.toString(letters[index]);
+            tt.setText(s);
             tt.setTextColor(Color.RED);
             tt.setTextSize(60);
             tt.setHeight(250);
