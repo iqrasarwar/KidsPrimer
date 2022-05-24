@@ -32,7 +32,6 @@ public class quiz3 extends AppCompatActivity {
         b = findViewById(R.id.button5);
         b2 = findViewById(R.id.button7);
         t = findViewById(R.id.tt);
-        //c = t.getText();
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,16 +55,17 @@ public class quiz3 extends AppCompatActivity {
             }
         });
     }
-//    @Override
-//    protected void onSaveInstanceState(final Bundle outState) {
-//        super.onSaveInstanceState(outState);
-//        outState.putString("tt",s);
-//    }
-//
-//    @Override
-//    protected void onRestoreInstanceState(final Bundle savedInstanceState) {
-//        super.onRestoreInstanceState(savedInstanceState);
-//        String ss1 = savedInstanceState.getString("tt");
-//        tt.setText(ss1);
-//    }
+    @Override
+    protected void onSaveInstanceState(final Bundle outState) {
+        super.onSaveInstanceState(outState);
+        String store = t.getText().toString();
+        outState.putString("tt",store);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(final Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String ss1 = savedInstanceState.getString("tt");
+        t.setText(ss1);
+    }
 }
