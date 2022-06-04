@@ -31,6 +31,10 @@ public class quiz1 extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//TODO:LIST VIEW
+                //TODO:CUTOM LIST VIEW
+                //TODO:aLERTS
+                //LIFE CYCLE
 
 //                if(r[1].isChecked())
 //                    r[1].setText("Correct");
