@@ -9,11 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsPrimer">
+
         <activity
-            android:name=".CatagConfig"
-            android:exported="false" />
-        <activity
-            android:name=".Catogries"
+            android:name=".SplachActivity"
             android:exported="false" />
         <activity
             android:name=".quiz3"
@@ -34,7 +32,7 @@
             android:name=".ScrollList"
             android:exported="false" />
         <activity
-            android:name=".SplachActivity"
+            android:name=".Catogries"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
