@@ -10,23 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsPrimer">
         <activity
+            android:name=".CatagConfig"
+            android:exported="false" />
+        <activity
+            android:name=".Catogries"
+            android:exported="false" />
+        <activity
             android:name=".quiz3"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".quiz2"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".quiz1"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Quizez"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Alphabet_activity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ScrollList"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".SplachActivity"
             android:exported="true">
@@ -35,7 +41,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
