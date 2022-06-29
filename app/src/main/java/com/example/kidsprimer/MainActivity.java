@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SplachActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     Button lern , test, repo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +20,7 @@ public class SplachActivity extends AppCompatActivity {
         lern.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SplachActivity.this,ScrollList.class);
+                Intent intent = new Intent(MainActivity.this,ScrollList.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +35,7 @@ public class SplachActivity extends AppCompatActivity {
         test.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SplachActivity.this,Quizez.class);
+                Intent intent = new Intent(MainActivity.this,Quizez.class);
                 startActivity(intent);
             }
         });
