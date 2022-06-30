@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsPrimer">
         <activity
-            android:name=".SplashActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplachActivity"
+            android:name=".Catogries"
             android:exported="false" />
         <activity
             android:name=".quiz3"
@@ -34,11 +34,10 @@
             android:name=".ScrollList"
             android:exported="false" />
         <activity
-            android:name=".Catogries"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
