@@ -3,22 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140px"
+        android:layout_height="140px"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/holo_red_dark"
+        android:elevation="5dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toStartOf="@+id/textView44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="?attr/actionButtonStyle"
+        app:shapeAppearanceOverlay="@style/imageViewRounded"
+        app:strokeColor="@android:color/white"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/textView44"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:gravity="left|center_vertical"
         android:text="TextView"
+        android:textColor="@color/cyan"
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintStart_toEndOf="@+id/imageView3"

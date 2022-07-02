@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B5F0F8"
+    android:background="@drawable/bg"
     tools:context=".Catogries">
 
 
@@ -14,8 +14,8 @@
         android:layout_height="103dp"
         android:gravity="center"
         android:text="@string/SelectCatagories"
-        android:textColor="#F3EFB505"
-        android:textSize="30sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

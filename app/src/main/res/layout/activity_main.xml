@@ -31,11 +31,11 @@
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/img_launcher_icon"
-                android:layout_width="231dp"
-                android:layout_height="132dp"
+                android:layout_width="150dp"
+                android:layout_height="135dp"
                 android:layout_centerHorizontal="true"
                 android:adjustViewBounds="true"
-                android:background="@android:color/transparent"
+                android:background="@android:color/holo_red_dark"
                 android:elevation="5dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/learn"
@@ -56,11 +56,12 @@
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/img_launcher_icon1"
-                android:layout_width="231dp"
-                android:layout_height="132dp"
+
+                android:layout_width="150dp"
+                android:layout_height="135dp"
                 android:layout_centerHorizontal="true"
                 android:adjustViewBounds="true"
-                android:background="@android:color/transparent"
+                android:background="@android:color/holo_red_dark"
                 android:elevation="5dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/test"
@@ -81,11 +82,11 @@
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/img_launcher_icon2"
-                android:layout_width="231dp"
-                android:layout_height="132dp"
+                android:layout_width="150dp"
+                android:layout_height="135dp"
                 android:layout_centerHorizontal="true"
                 android:adjustViewBounds="true"
-                android:background="@android:color/transparent"
+                android:background="@android:color/holo_red_dark"
                 android:elevation="5dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/code"

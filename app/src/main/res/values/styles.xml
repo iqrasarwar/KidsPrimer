@@ -3,6 +3,6 @@
 
     <style name="imageViewRounded">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">76%</item>
+        <item name="cornerSize">50%</item>
     </style>
 </resources>

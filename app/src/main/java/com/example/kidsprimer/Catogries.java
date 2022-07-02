@@ -15,7 +15,8 @@ public class Catogries extends AppCompatActivity {
         setContentView(R.layout.activity_catogries);
         listview = findViewById(R.id.CatagoriesList);
         ArrayList<CatagList> arraylist = new ArrayList<CatagList>();
-        arraylist.add(new CatagList(R.drawable.ic_launcher_background,"mytxt",R.drawable.ic_launcher_foreground));
+        arraylist.add(new CatagList(R.drawable.rhymes,"Rhymes",
+                R.drawable.ic_baseline_double_arrow_24));
         CatagConfig list = new CatagConfig(this,0,arraylist);
         listview.setAdapter(list);
     }
