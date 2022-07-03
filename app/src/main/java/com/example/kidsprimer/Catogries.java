@@ -2,7 +2,10 @@ package com.example.kidsprimer;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -28,5 +31,15 @@ public class Catogries extends AppCompatActivity {
         }
         CatagConfig list = new CatagConfig(this,0,arraylist);
         listview.setAdapter(list);
+
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(Catogries.this,Slider.class);
+                String str = "A";
+                intent.putExtra("SS", str);
+                startActivity(intent);
+            }
+        });
     }
 }
