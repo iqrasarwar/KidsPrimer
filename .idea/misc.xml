@@ -7,12 +7,14 @@
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1535" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/drawable/textview_border.xml" value="0.1535" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-land/activity_alphabet.xml" value="0.1728395061728395" />
+        <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-land/activity_catogries.xml" value="0.11728395061728394" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-land/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-land/activity_quiz2.xml" value="0.1728395061728395" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-land/activity_quiz3.xml" value="0.1728395061728395" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-land/activity_quizez.xml" value="0.1728395061728395" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-land/activity_scroll_list.xml" value="0.1728395061728395" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-land/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-land/list_view_for_catagories.xml" value="0.33" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout-sw600dp/activity_splash.xml" value="0.20072992700729927" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout/activity_alphabet.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout/activity_catogries.xml" value="0.19610507246376813" />
@@ -23,6 +25,7 @@
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout/activity_quizez.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout/activity_scroll_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout/activity_scrolling_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout/activity_slider.xml" value="0.1675929884566054" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout/activity_splash.xml" value="0.18" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout/content_scrolling.xml" value="0.18" />
         <entry key="..\:/Users/BUTT SYSTEMS/AndroidStudioProjects/KidsPrimer/app/src/main/res/layout/list_view_for_catagories.xml" value="0.33" />

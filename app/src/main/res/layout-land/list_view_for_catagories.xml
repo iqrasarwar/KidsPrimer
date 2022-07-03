@@ -32,8 +32,8 @@
 
     <TextView
         android:id="@+id/textView44"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="492dp"
+        android:layout_height="67dp"
         android:fontFamily="sans-serif"
         android:gravity="left|center_vertical"
         android:text="TextView"
