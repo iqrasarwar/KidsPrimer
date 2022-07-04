@@ -25,8 +25,9 @@
                 <ImageView
                     android:id="@+id/imageView12"
                     android:layout_width="65dp"
-                    android:layout_height="65dp"
+                    android:layout_height="match_parent"
                     app:srcCompat="@drawable/home" />
+
                 <View
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
@@ -37,7 +38,7 @@
                     android:id="@+id/imageView14"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    app:srcCompat="@drawable/back_green" />
+                    app:srcCompat="@drawable/go_bck" />
             </LinearLayout>
 
             <TextView

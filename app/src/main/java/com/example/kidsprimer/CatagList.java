@@ -8,7 +8,7 @@ public class CatagList {
     private String txt;
     private int arrow;
 
-    public CatagList(int img, String txt, int arrow) {
+    public CatagList(int imga, String txt, int arrow) {
         this.img = img;
         this.txt = txt;
         this.arrow = arrow;
