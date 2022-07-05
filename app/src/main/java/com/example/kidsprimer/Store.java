@@ -3,8 +3,6 @@ package com.example.kidsprimer;
 public class Store {
     String [][] Collection;
     int [][] CollectionImgs;
-    String [] listNames;
-    int [] icons;
 
     public Store() {
         String[] alphabets = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q",
@@ -19,14 +17,24 @@ public class Store {
         int[] rhymes1 = {};
         String[]Numbers = {};
         int[]Numbers1 = {};
-        String[] Days = {"Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday",
-                "Sunday"};
+        String[] Days = {
+                "","","","","","",""
+                //"Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday",
+                //"Sunday"
+        };
         int[] Days1 = {R.drawable.wd1,R.drawable.wd2,R.drawable.wd3,R.drawable.wd4,
                 R.drawable.wd5,R.drawable.wd6,R.drawable.wd7};
-        String[] Months= {};
-        int[] Months1 = {};
-        String[] Colors = {};
-        int[] Colors1 = {};
+        String[] Months= {
+                //"January","February","March","April","May","June","July","August",
+                //                "September","October","November","December"
+                "","","","","","","","","","","",""
+        };
+        int[] Months1 = {R.drawable.m1,R.drawable.m2,R.drawable.m3,R.drawable.m4,R.drawable.m5,
+                R.drawable.m6,R.drawable.m7,R.drawable.m8,R.drawable.m9,R.drawable.m10,
+                R.drawable.m11,R.drawable.m12};
+        String[] Colors = {"","","","","","","",""};
+        int[] Colors1 = {R.drawable.c1,R.drawable.c2,R.drawable.c3,R.drawable.c4,R.drawable.c5,
+                R.drawable.c6,R.drawable.c7,R.drawable.c8};
         String[] Fruits = {};
         int[] Fruits1 = {};
         String[] Flowers = {};

@@ -10,7 +10,7 @@ import android.os.Handler;
 import android.view.WindowManager;
 public class SplashActivity extends AppCompatActivity {
     MediaPlayer bg;
-    private static int SPLASH_SCREEN_TIME_OUT=5000;
+    private static int SPLASH_SCREEN_TIME_OUT=1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

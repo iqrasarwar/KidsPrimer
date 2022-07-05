@@ -11,9 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Slider extends AppCompatActivity {
-    TextView tt;
     ImageView iv,next,before;
-    int index;
+    int index = 0;
     Store S = new Store();
     String [] text;
     int[] imgs;
@@ -22,7 +21,6 @@ public class Slider extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slider);
-        tt = findViewById(R.id.textView2);
         iv = findViewById(R.id.imageView13);
         next = findViewById(R.id.imageView10);
         before = findViewById(R.id.imageView9);
@@ -30,25 +28,41 @@ public class Slider extends AppCompatActivity {
         if(i.getExtras() != null)
         {
             int indexx = Integer.parseInt(i.getStringExtra("index"));
-            text = S.Collection[indexx];
             imgs = S.CollectionImgs[indexx];
         }
-        tt.setText(text[index]);
+        if(index==0)
+            before.setVisibility(View.INVISIBLE);
+        if(index == imgs.length-1)
+            next.setVisibility(View.INVISIBLE);
         iv.setBackgroundResource(imgs[index]);
         before.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 index--;
-                tt.setText(text[index]);
                 iv.setBackgroundResource(imgs[index]);
+
+
+                if(index==0)
+                    before.setVisibility(View.INVISIBLE);
+                else
+                    before.setVisibility(View.VISIBLE);
+                if(index!= imgs.length-1)
+                    next.setVisibility(View.VISIBLE);
             }
         });
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 index++;
-                tt.setText(text[index]);
                 iv.setBackgroundResource(imgs[index]);
+
+
+                if(index== imgs.length-1)
+                    next.setVisibility(View.INVISIBLE);
+                else
+                    next.setVisibility(View.VISIBLE);
+                if(index!=0)
+                    before.setVisibility(View.VISIBLE);
             }
         });
     }
