@@ -10,12 +10,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
+//the single slider that is used allover.
 public class Slider extends AppCompatActivity {
     ImageView iv,next,before;
     int index = 0;
     Store S = new Store();
     int[] imgs;
+    int[] voices;
     MediaPlayer m;
 
     @Override
@@ -25,13 +26,14 @@ public class Slider extends AppCompatActivity {
         iv = findViewById(R.id.imageView13);
         next = findViewById(R.id.imageView10);
         before = findViewById(R.id.imageView9);
-        m = MediaPlayer.create(Slider.this, R.raw.tuseday);
-        m.start();
         Intent i = getIntent();
         if(i.getExtras() != null)
         {
             int indexx = Integer.parseInt(i.getStringExtra("index"));
             imgs = S.CollectionImgs[indexx];
+            voices = S.Collection[indexx];
+            m = MediaPlayer.create(Slider.this, voices[index]);
+            m.start();
         }
         if(index==0)
             before.setVisibility(View.INVISIBLE);
@@ -43,7 +45,8 @@ public class Slider extends AppCompatActivity {
             public void onClick(View view) {
                 index--;
                 iv.setBackgroundResource(imgs[index]);
-                m = MediaPlayer.create(Slider.this, R.raw.tuseday);
+                m.release();
+                m = MediaPlayer.create(Slider.this, voices[index]);
                 m.start();
 
                 if(index==0)
@@ -59,7 +62,8 @@ public class Slider extends AppCompatActivity {
             public void onClick(View view) {
                 index++;
                 iv.setBackgroundResource(imgs[index]);
-                m = MediaPlayer.create(Slider.this, R.raw.tuseday);
+                m.release();
+                m = MediaPlayer.create(Slider.this, voices[index]);
                 m.start();
 
                 if(index== imgs.length-1)

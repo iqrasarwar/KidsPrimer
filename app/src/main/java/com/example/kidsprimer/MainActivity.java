@@ -8,7 +8,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
+//main menu with learn test and reo
 public class MainActivity extends AppCompatActivity {
     MediaPlayer bg;
     Button lern , test, repo;

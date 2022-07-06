@@ -3,6 +3,7 @@ package com.example.kidsprimer;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//used to built main activity catagory list
 public class CatagList {
     private int img;
     private String txt;

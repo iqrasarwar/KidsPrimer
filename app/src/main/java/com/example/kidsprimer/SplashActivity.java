@@ -8,9 +8,11 @@ import android.content.Intent;
 import android.os.Handler;
 
 import android.view.WindowManager;
+
+//shown for 2 sec at start
 public class SplashActivity extends AppCompatActivity {
-    MediaPlayer bg;
-    private static int SPLASH_SCREEN_TIME_OUT=1000;
+
+    private static int SPLASH_SCREEN_TIME_OUT=2000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,9 +26,6 @@ public class SplashActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
-
-        bg = MediaPlayer.create(SplashActivity.this,R.raw.kids);
-        bg.start();
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -36,12 +35,6 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
             }
         }, SPLASH_SCREEN_TIME_OUT);
-    }
-    @Override
-    protected void onPause()
-    {
-        super.onPause();
-        bg.release();
     }
 }
 

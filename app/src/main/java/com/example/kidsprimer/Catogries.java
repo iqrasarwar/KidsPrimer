@@ -22,8 +22,7 @@ public class Catogries extends AppCompatActivity {
         listview = findViewById(R.id.CatagoriesList);
         ArrayList<CatagList> arraylist = new ArrayList<CatagList>();
         for (int i = 0; i < 15; i++) {
-            Log.i("c","ii988");
-            arraylist.add(new CatagList(s.CollectionImgs[13][i],s.Collection[13][i],
+            arraylist.add(new CatagList(s.icons[i],(String)s.listNames[i],
                     R.drawable.ic_baseline_double_arrow_24));
         }
         CatagConfig list = new CatagConfig(this,0,arraylist);
@@ -31,12 +30,12 @@ public class Catogries extends AppCompatActivity {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(l>2)
-                {
+                //if(l>2)
+               // {
                     Intent intent = new Intent(Catogries.this,Slider.class);
                     intent.putExtra("index", l+"");
                     startActivity(intent);
-                }
+               // }
             }
         });
     }

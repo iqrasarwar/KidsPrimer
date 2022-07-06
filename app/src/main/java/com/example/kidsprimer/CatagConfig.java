@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.List;
-
+//used to config main activity catagory list
 public class CatagConfig extends ArrayAdapter<CatagList>
 {
     public CatagConfig(@NonNull Context context, int resource,
