@@ -6,12 +6,21 @@ public class Store {
     String[] listNames;
     int[] icons;
     String[][] lists;
-
+    int[][] listImgs;
     public Store() {
         lists = new String[][]{
-                {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q",
-                                "R","S",
-                                "T","U","V","W","X","Y","Z" },{},{}
+                {"","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",
+                        //""A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q",
+                          //      "R","S",
+                            //    "T","U","V","W","X","Y","Z"
+                        },{"Twinkle Twinkle","Johny Jhony","Humty Dumty","Rain Rain"},{}
+        };
+        listImgs = new int[][]{
+                {R.drawable.l0,R.drawable.b,R.drawable.c,R.drawable.d,R.drawable.e,R.drawable.f,
+                        R.drawable.g,R.drawable.h,R.drawable.i,R.drawable.j,R.drawable.k,
+                        R.drawable.l,R.drawable.m,R.drawable.n,R.drawable.o,R.drawable.l09,
+                        R.drawable.q,R.drawable.r,R.drawable.s,R.drawable.t,R.drawable.u,
+                        R.drawable.v,R.drawable.w,R.drawable.x,R.drawable.y,R.drawable.z},{R.drawable.tt,R.drawable.jj,R.drawable.hd,R.drawable.rr},{}
         };
         int[] alphabets = {
                 R.raw.l1,R.raw.l2,R.raw.l3,R.raw.l4,R.raw.l5,R.raw.l6,R.raw.l7,R.raw.l8,R.raw.l9,

@@ -30,6 +30,12 @@ public class CircledConfig extends ArrayAdapter<CircledList> {
         ImageView img1 = convertView.findViewById(R.id.imageView6);
         TextView txt2 = convertView.findViewById(R.id.textView45);
         ImageView img2 = convertView.findViewById(R.id.imageView8);
+        if(ctg.getImg() == 0)
+        img.setVisibility(View.GONE);
+        if(ctg.getImg1() == 0)
+            img1.setVisibility(View.GONE);
+        if(ctg.getImg2() == 0)
+            img2.setVisibility(View.GONE);
         txt.setText(ctg.getTxt());
         img.setImageResource(ctg.getImg());
         txt1.setText(ctg.getTxt1());

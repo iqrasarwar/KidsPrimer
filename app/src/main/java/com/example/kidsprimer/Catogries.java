@@ -36,7 +36,7 @@ public class Catogries extends AppCompatActivity {
                     intent.putExtra("index", l+"");
                     startActivity(intent);
                }
-                if(l==0)
+                else
                 {
                     Intent intent = new Intent(Catogries.this,CirCatag.class);
                     intent.putExtra("index", l+"");

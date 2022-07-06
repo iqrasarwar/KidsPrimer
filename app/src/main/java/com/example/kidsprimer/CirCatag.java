@@ -26,7 +26,7 @@ public class CirCatag extends AppCompatActivity {
         if(intent.getExtras() != null)
         {
             int indexx = Integer.parseInt(intent.getStringExtra("index"));
-            imgs = s.CollectionImgs[indexx];
+            imgs = s.listImgs[indexx];
             text = s.lists[indexx];
         }
         ArrayList<CircledList> arraylist = new ArrayList<CircledList>();
@@ -38,18 +38,24 @@ public class CirCatag extends AppCompatActivity {
                     text[ind]));
             ind+=3;
         }
+        if(left == 2)
+            arraylist.add(new CircledList(0,null,imgs[ind+1],text[ind+1],imgs[ind],
+                    text[ind]));
+        if(left == 1)
+            arraylist.add(new CircledList(0,
+                    null,0,null,imgs[ind],text[ind]));
         CircledConfig list = new CircledConfig(this,0,arraylist);
         listview.setAdapter(list);
-//        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//                //if(l>2)
-//                // {
-//                Intent intent = new Intent(CirCatag.this,Slider.class);
-//                intent.putExtra("index", l+"");
-//                startActivity(intent);
-//                // }
-//            }
-//        });
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //if(l>2)
+                // {
+                Intent intent = new Intent(CirCatag.this,Slider.class);
+                intent.putExtra("index", l+"");
+                startActivity(intent);
+                // }
+            }
+        });
     }
 }
