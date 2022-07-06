@@ -30,12 +30,18 @@ public class Catogries extends AppCompatActivity {
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //if(l>2)
-               // {
+                if(l>2)
+                {
                     Intent intent = new Intent(Catogries.this,Slider.class);
                     intent.putExtra("index", l+"");
                     startActivity(intent);
-               // }
+               }
+                if(l==0)
+                {
+                    Intent intent = new Intent(Catogries.this,CirCatag.class);
+                    intent.putExtra("index", l+"");
+                    startActivity(intent);
+                }
             }
         });
     }

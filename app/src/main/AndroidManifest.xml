@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsPrimer">
         <activity
+            android:name=".CirCatag"
+            android:exported="false" />
+        <activity
             android:name=".Slider"
             android:exported="false" />
         <activity

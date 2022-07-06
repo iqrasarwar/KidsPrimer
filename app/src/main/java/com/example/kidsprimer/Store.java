@@ -5,8 +5,14 @@ public class Store {
     int [][] CollectionImgs;
     String[] listNames;
     int[] icons;
+    String[][] lists;
 
     public Store() {
+        lists = new String[][]{
+                {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q",
+                                "R","S",
+                                "T","U","V","W","X","Y","Z" },{},{}
+        };
         int[] alphabets = {
                 R.raw.l1,R.raw.l2,R.raw.l3,R.raw.l4,R.raw.l5,R.raw.l6,R.raw.l7,R.raw.l8,R.raw.l9,
                 R.raw.l10,R.raw.l11,R.raw.l12,R.raw.l13,R.raw.l14,R.raw.l15,R.raw.l16,R.raw.l17,
