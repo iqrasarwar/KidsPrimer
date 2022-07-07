@@ -17,6 +17,7 @@ public class CirCatag extends AppCompatActivity {
     int[] imgs;
     String [] text;
     Store s = new Store();
+    CircledList[] cirlist;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,30 +32,36 @@ public class CirCatag extends AppCompatActivity {
         }
         ArrayList<CircledList> arraylist = new ArrayList<CircledList>();
         int len = imgs.length/3;
+        cirlist = new CircledList[imgs.length];
         int left = imgs.length%3;
-        int ind =0;
-        for (int i = 0; i < len; i++) {
-            arraylist.add(new CircledList(imgs[ind+2],text[ind+2],imgs[ind+1],text[ind+1],imgs[ind],
-                    text[ind]));
+        int ind =0,i=0;
+        for (i = 0; i < len; i++) {
+            cirlist[i] = new CircledList(imgs[ind+2],text[ind+2],imgs[ind+1],text[ind+1],imgs[ind],
+                    text[ind]);
+            arraylist.add(cirlist[i]);
             ind+=3;
         }
         if(left == 2)
-            arraylist.add(new CircledList(0,null,imgs[ind+1],text[ind+1],imgs[ind],
-                    text[ind]));
+        {
+            cirlist[i] = new CircledList(0,null,imgs[ind+1],text[ind+1],imgs[ind],
+                    text[ind]);
+            arraylist.add(cirlist[i]);
+        }
         if(left == 1)
-            arraylist.add(new CircledList(0,
-                    null,0,null,imgs[ind],text[ind]));
+        {
+            cirlist[i] = new CircledList(0,
+                    null,0,null,imgs[ind],text[ind]);
+            arraylist.add(cirlist[i]);
+        }
         CircledConfig list = new CircledConfig(this,0,arraylist);
         listview.setAdapter(list);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //if(l>2)
-                // {
                 Intent intent = new Intent(CirCatag.this,Slider.class);
+                l = l+cirlist[(int)l].getIndexOfCol();
                 intent.putExtra("index", l+"");
                 startActivity(intent);
-                // }
             }
         });
     }

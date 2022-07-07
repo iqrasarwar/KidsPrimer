@@ -7,6 +7,7 @@ public class CircledList {
     private String txt1;
     private int img2;
     private String txt2;
+    int indexOfCol;
 
     public CircledList(int img, String txt, int img1, String txt1, int img2, String txt2) {
         this.img = img;
@@ -15,6 +16,7 @@ public class CircledList {
         this.txt1 = txt1;
         this.img2 = img2;
         this.txt2 = txt2;
+        this.indexOfCol  = 0;
     }
 
     public int getImg() {
@@ -61,7 +63,15 @@ public class CircledList {
         this.img2 = img2;
     }
 
-    public void setTxt3(String txt2) {
+    public int getIndexOfCol() {
+        return indexOfCol;
+    }
+
+    public void setTxt2(String txt2) {
         this.txt2 = txt2;
+    }
+
+    public void setIndexOfCol(int indexOfCol) {
+        this.indexOfCol = indexOfCol;
     }
 }

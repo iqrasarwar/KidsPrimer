@@ -34,12 +34,6 @@
             android:name=".Quizez"
             android:exported="false" />
         <activity
-            android:name=".Alphabet_activity"
-            android:exported="false" />
-        <activity
-            android:name=".ScrollList"
-            android:exported="false" />
-        <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>

@@ -20,7 +20,8 @@ public class Store {
                         R.drawable.g,R.drawable.h,R.drawable.i,R.drawable.j,R.drawable.k,
                         R.drawable.l,R.drawable.m,R.drawable.n,R.drawable.o,R.drawable.l09,
                         R.drawable.q,R.drawable.r,R.drawable.s,R.drawable.t,R.drawable.u,
-                        R.drawable.v,R.drawable.w,R.drawable.x,R.drawable.y,R.drawable.z},{R.drawable.tt,R.drawable.jj,R.drawable.hd,R.drawable.rr},{}
+                        R.drawable.v,R.drawable.w,R.drawable.x,R.drawable.y,R.drawable.z},
+                {R.drawable.tt1,R.drawable.jj1,R.drawable.hd1,R.drawable.rr1},{}
         };
         int[] alphabets = {
                 R.raw.l1,R.raw.l2,R.raw.l3,R.raw.l4,R.raw.l5,R.raw.l6,R.raw.l7,R.raw.l8,R.raw.l9,
