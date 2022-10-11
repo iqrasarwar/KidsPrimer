@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 //the single slider that is used allover.
 public class Slider extends AppCompatActivity {
-    ImageView iv,next,before;
+    ImageView iv,next,before,home,main;
     int index = 0;
     Store S = new Store();
     int[] imgs;
@@ -23,6 +23,8 @@ public class Slider extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slider);
+        home = findViewById(R.id.imageView12);
+        main = findViewById(R.id.imageView14);
         iv = findViewById(R.id.imageView13);
         next = findViewById(R.id.imageView10);
         before = findViewById(R.id.imageView9);
@@ -72,6 +74,20 @@ public class Slider extends AppCompatActivity {
                     next.setVisibility(View.VISIBLE);
                 if(index!=0)
                     before.setVisibility(View.VISIBLE);
+            }
+        });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Slider.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Slider.this,Catogries.class);
+                startActivity(intent);
             }
         });
     }

@@ -14,7 +14,7 @@
         android:gravity="center"
         android:text="Let's Learn"
         android:textColor="@android:color/holo_red_dark"
-        android:textSize="24sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/Ctglist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

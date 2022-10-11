@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import java.util.List;
 
@@ -31,24 +32,24 @@ public class CircledConfig extends ArrayAdapter<CircledList> {
         ImageView img1 = convertView.findViewById(R.id.imageView6);
         TextView txt2 = convertView.findViewById(R.id.textView45);
         ImageView img2 = convertView.findViewById(R.id.imageView8);
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ctg.setIndexOfCol(3);
-            }
-        });
-        img1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ctg.setIndexOfCol(2);
-            }
-        });
-        img2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ctg.setIndexOfCol(1);
-            }
-        });
+//        img.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ctg.setIndexOfCol(3);
+//            }
+//        });
+//        img1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ctg.setIndexOfCol(2);
+//            }
+//        });
+//        img2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ctg.setIndexOfCol(1);
+//            }
+//        });
         if(ctg.getImg() == 0)
         img.setVisibility(View.GONE);
         if(ctg.getImg1() == 0)

@@ -7,6 +7,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -18,15 +19,18 @@ public class CirCatag extends AppCompatActivity {
     String [] text;
     Store s = new Store();
     CircledList[] cirlist;
+    Button btn;
+    int indexx;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cir_catag);
         listview = findViewById(R.id.Ctglist);
+        btn = findViewById(R.id.button8);
         Intent intent = getIntent();
         if(intent.getExtras() != null)
         {
-            int indexx = Integer.parseInt(intent.getStringExtra("index"));
+            indexx = Integer.parseInt(intent.getStringExtra("index"));
             imgs = s.listImgs[indexx];
             text = s.lists[indexx];
         }
@@ -55,14 +59,22 @@ public class CirCatag extends AppCompatActivity {
         }
         CircledConfig list = new CircledConfig(this,0,arraylist);
         listview.setAdapter(list);
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onClick(View view) {
                 Intent intent = new Intent(CirCatag.this,Slider.class);
-                l = l+cirlist[(int)l].getIndexOfCol();
-                intent.putExtra("index", l+"");
+                intent.putExtra("index", indexx+"");
                 startActivity(intent);
             }
         });
+//        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                Intent intent = new Intent(CirCatag.this,Slider.class);
+//                l = l+cirlist[(int)l].getIndexOfCol();
+//                intent.putExtra("index", l+"");
+//                startActivity(intent);
+//            }
+//        });
     }
 }
